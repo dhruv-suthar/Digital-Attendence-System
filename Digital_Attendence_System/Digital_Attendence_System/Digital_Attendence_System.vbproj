@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F0EEFBE-AF75-4BB5-B609-5774E7AF37AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Digital_Attendence_System.My.MyApplication</StartupObject>
+    <RootNamespace>Digital_Attendence_System</RootNamespace>
+    <AssemblyName>Digital_Attendence_System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Digital_Attendence_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Digital_Attendence_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_us.Designer.vb">
+      <DependentUpon>About_us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About_us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login.Designer.vb">
+      <DependentUpon>Admin_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu.Designer.vb">
+      <DependentUpon>Admin_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_password.Designer.vb">
+      <DependentUpon>Change_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Student.Designer.vb">
+      <DependentUpon>Create_Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Teacher.Designer.vb">
+      <DependentUpon>Create_Teacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Teacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Attendence.Designer.vb">
+      <DependentUpon>Individual_Attendence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Attendence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Practical_info.Designer.vb">
+      <DependentUpon>Practical_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Practical_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_attendence.Designer.vb">
+      <DependentUpon>Search_attendence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_attendence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_attendence_teacher.Designer.vb">
+      <DependentUpon>Search_attendence_teacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_attendence_teacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Option.Designer.vb">
+      <DependentUpon>Select_Option.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Option.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_login.designer.vb">
+      <DependentUpon>Student_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading_page.Designer.vb">
+      <DependentUpon>Loading_page.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus.Designer.vb">
+      <DependentUpon>Menus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Teacher_Login.Designer.vb">
+      <DependentUpon>Teacher_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About_us.resx">
+      <DependentUpon>About_us.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_password.resx">
+      <DependentUpon>Change_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Student.resx">
+      <DependentUpon>Create_Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Teacher.resx">
+      <DependentUpon>Create_Teacher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Attendence.resx">
+      <DependentUpon>Individual_Attendence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Practical_info.resx">
+      <DependentUpon>Practical_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_attendence.resx">
+      <DependentUpon>Search_attendence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_attendence_teacher.resx">
+      <DependentUpon>Search_attendence_teacher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Option.resx">
+      <DependentUpon>Select_Option.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_login.resx">
+      <DependentUpon>Student_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading_page.resx">
+      <DependentUpon>Loading_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus.resx">
+      <DependentUpon>Menus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Login.resx">
+      <DependentUpon>Teacher_Login.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_logon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_hover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher_loogin_simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_login_simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_login_inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher_inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seacrh_student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Practical_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Change_Password_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher_80.png" />
+    <None Include="Resources\Student_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Admin_small_new1.png" />
+    <None Include="Resources\Admin_small_new.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
